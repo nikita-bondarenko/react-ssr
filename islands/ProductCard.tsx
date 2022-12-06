@@ -17,7 +17,7 @@ const ProductCard = ({product} :ProductCardProps) => {
             <img src={product.image} alt={product.title} class={"w-1/6"}/>
             <h2 class={"font-bold text-lg"}> {product.title}</h2>
             <p class={"font-bold"}>{product.price}</p>
-            <a href={`/product/${product.id}`}>More</a>
+            <a href={`/product/${product.id}`}>Product Page</a>
             <button onClick={() => toggle()} class={"rounded border py-2 px-4 bg-red-400 text-white"}> Toggle Description</button>
             {isDetailsShown && <p>{product.description}</p>}
         </div>
